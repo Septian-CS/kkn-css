@@ -1,0 +1,38 @@
+
+
+.isi{
+    margin-top: 30px;
+    display: grid;
+    align-items: center;
+    justify-content:center;
+}
+
+.isi h1{
+    color: rgb(0, 0, 0);
+}
+
+.isi button{
+    size: 80px;
+    margin: 10px 0;
+    padding: 20px 0;
+    box-sizing: border-box;
+    cursor: wait;
+}
+
+.cursor-pointer {
+    cursor: wait;
+}
+
+.nav{
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu{
+    display: flex;
+}
+
+.navbar-items {
+    padding: 20px 10px 0 10px;
+    list-style: none;
+}
