@@ -6,16 +6,15 @@
 }
 
 body {
-    background-color: #f8f9fa;
+    background-color: #F1F1F1;
 }
 
 .header {
-    background-color: white;
+    background-color: #F1F1F1;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ddd;
 }
 
 .navbar {
@@ -57,12 +56,13 @@ body {
     padding-top: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    background-color: #3b5998;
+    background-color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
     max-width: 400px;
     width: 100%;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.5); /*x, y, blur, spread radius*/
 }
 
 .card-image {
@@ -70,12 +70,12 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5); /* x, y, blur, spread radius, */
+    /* box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5); x, y, blur, spread radius, */
 }
 
 .card-content {
-    padding: 15px;
-    color: white;
+    padding-top: 15px;
+    color: rgb(0, 0, 0);
 }
 
 .card-title {
@@ -166,6 +166,62 @@ body {
     background-color: #233652;
 }
 
+.submenuInfoClass div {
+    padding: 5px 25px;
+    background: rgb(1, 87, 174);
+    cursor: pointer;
+}
+
+.submenuInfoClass div:hover {
+    background-color: #b3b3b3;
+    transition: background-color 0.3s ease;
+}
+
+.submenuInfoClass {
+    border:#ffffff;
+}
+
+.submenuKegiatanClass div {
+    padding: 5px 25px;
+    background: rgb(1, 87, 174);
+    cursor: pointer;
+}
+
+.submenuKegiatanClass div:hover {
+    background-color: #b3b3b3;
+    transition: background-color 0.3s ease;
+}
+
+.submenuKegiatanClass {
+    border:#ffffff;
+}
+
+.submenuDatabaseClass div {
+    padding: 5px 25px;
+    background: rgb(1, 87, 174);
+    cursor: pointer;
+}
+
+.submenuDatabaseClass div:hover {
+    background-color: #b3b3b3;
+    transition: background-color 0.3s ease;
+}
+
+.submenuDatabaseClass {
+    border:#ffffff;
+}
+
+.nt {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-body a {
+    text-decoration: none; /* Menghilangkan underline */
+    color: inherit;
+}
+
 
 /* Media Queries untuk Responsivitas */
 @media (min-width: 450px) {
@@ -192,6 +248,9 @@ body {
     .card {
         max-width: 90%;
         width: 100%;
+    }
+    .offcanvas-start {
+        --bs-offcanvas-width: 85%;
     }
     .offcanvas-end {
         --bs-offcanvas-width: 25%; /* Sesuaikan lebar sesuai kebutuhan */
